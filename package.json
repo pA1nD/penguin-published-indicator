@@ -1,0 +1,23 @@
+{
+  "name": "penguin-published-indicator",
+  "version": "1.0.0",
+  "description": "Simple published state indicator for penguin.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pa1nd/penguin-published-indicator.git"
+  },
+  "keywords": [
+    "penguinjs",
+    "penguinjs-component"
+  ],
+  "author": "Björn Schmidtke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pa1nd/penguin-published-indicator/issues"
+  },
+  "homepage": "https://github.com/pa1nd/penguin-published-indicator#readme"
+}
