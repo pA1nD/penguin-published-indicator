@@ -1,6 +1,6 @@
 {
   "name": "penguin-published-indicator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple published state indicator for penguin.js.",
   "main": "index.js",
   "scripts": {
