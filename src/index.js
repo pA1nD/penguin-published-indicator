@@ -1,8 +1,8 @@
-export function render () {
+export function render() {
   return { replace: '' }
 }
 
-export function mount (ctx, props, el) {
+export function mount(ctx, props, el) {
   if (process.env.PENGUIN_ENV === 'production') return
   const { timeout = 2000 } = props
   const update = (hidden = true) => {
@@ -18,7 +18,7 @@ export function mount (ctx, props, el) {
   ctx.store.subscribe(() => uiStore(ctx.store.getState()))
 }
 
-function UIStore ({ timeout, onShow, onHide }) {
+function UIStore({ timeout, onShow, onHide }) {
   let state = false
   let currentID = 0
   let timer = null
@@ -27,7 +27,7 @@ function UIStore ({ timeout, onShow, onHide }) {
     state = s
   }
 
-  function startTimer (id) {
+  function startTimer(id) {
     if (timer) clearTimeout(timer)
     onShow()
     timer = setTimeout(() => {

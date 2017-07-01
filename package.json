@@ -3,8 +3,10 @@
   "version": "1.1.0",
   "description": "Simple published state indicator for penguin.js.",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "rollup -c rollup.config.js -o index.js src/index.js",
+    "watch": "rollup -w -c rollup.config.js -o index.js src/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +16,7 @@
     "penguinjs",
     "penguinjs-component"
   ],
-  "author": "Björn Schmidtke",
+  "author": "Björn Schmidtke <bs@websites-smart.de>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pa1nd/penguin-published-indicator/issues"
